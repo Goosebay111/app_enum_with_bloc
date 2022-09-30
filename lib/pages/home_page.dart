@@ -5,6 +5,7 @@ import 'package:app_enum_with_bloc/enums/item_enum.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+// 1) Convert from StateFullWidget to StatelessWidget
 class MyHomePage extends StatelessWidget {
   const MyHomePage({Key? key}) : super(key: key);
 
@@ -13,6 +14,7 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // 2) Add bloc builder
     return BlocBuilder<SelectedBloc, SelectedState>(builder: (context, state) {
       return Scaffold(
         appBar: AppBar(
@@ -39,6 +41,7 @@ class MyHomePage extends StatelessWidget {
                                 e.name.toString(),
                               ),
                               onPressed: () {
+                                // 3) Word with the state with BlocProvider
                                 state.selectedItems.contains(e)
                                     ? BlocProvider.of<SelectedBloc>(context)
                                         .add(RemoveItem(e))
