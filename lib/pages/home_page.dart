@@ -1,7 +1,7 @@
 import 'package:app_enum_with_bloc/blocs/selected/bloc_events.dart';
 import 'package:app_enum_with_bloc/blocs/selected/bloc_state.dart';
 import 'package:app_enum_with_bloc/blocs/selected/item_bloc.dart';
-import 'package:app_enum_with_bloc/enums/weapon_enum.dart';
+import 'package:app_enum_with_bloc/enums/item_enum.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

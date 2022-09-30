@@ -1,4 +1,4 @@
-import 'package:app_enum_with_bloc/enums/weapon_enum.dart';
+import 'package:app_enum_with_bloc/enums/item_enum.dart';
 
 class SelectedState {
   SelectedState({required this.item, required this.selectedItems});

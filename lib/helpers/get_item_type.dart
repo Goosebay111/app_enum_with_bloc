@@ -1,5 +1,5 @@
 
-import 'package:app_enum_with_bloc/enums/weapon_enum.dart';
+import 'package:app_enum_with_bloc/enums/item_enum.dart';
 
 Item getItemType(String item) {
   switch (item) {
