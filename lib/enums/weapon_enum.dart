@@ -5,6 +5,4 @@ enum Item {
 
   const Item(this.damage);
   final int damage;
-
-  int bonus() => damage;
 }
